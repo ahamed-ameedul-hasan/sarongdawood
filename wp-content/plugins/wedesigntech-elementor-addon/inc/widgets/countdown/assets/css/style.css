@@ -1,0 +1,145 @@
+.wdt-countdown-holder .wdt-downcount {
+    display: flex;
+    width: max-content;
+    border: 1px solid var(--wdtHeadAltColor);
+}
+
+.wdt-counter-wrapper .wdt-counter-number {
+    font-size: var(--wdtFontSize_H2);
+}
+
+.wdt-countdown-holder .wdt-counter-wrapper .wdt-counter-inner-wrapper {
+    padding: 20px;
+    text-align: center;
+}
+
+.wdt-countdown-holder .wdt-counter-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.wdt-countdown-holder .wdt-counter-wrapper .wdt-counter-inner-wrapper .title {
+    margin: 0 0;
+    font-size: var(--wdtFontSize_H4);
+}
+
+.wdt-countdown-holder .wdt-counter-wrapper .wdt-counter-divider {
+    line-height: 1.2em;
+    font-size: var(--wdtFontSize_Alt);
+}
+
+.wdt-custom-home-6-countdown .wdt-countdown-holder .wdt-downcount {
+    border-width: 0px;
+}
+
+.wdt-custom-home-6-countdown .wdt-countdown-holder .wdt-countdown-label {
+    display: none;
+}
+
+.wdt-custom-home-6-countdown .wdt-countdown-holder .wdt-counter-wrapper .wdt-counter-inner-wrapper {
+    display: flex;
+    align-items: baseline;
+}
+
+.wdt-custom-home-6-countdown .wdt-counter-wrapper .wdt-counter-number {
+    font-size: clamp(1.125rem, 0.5192rem + 2.6923vw, 3.75rem);
+    color: var(--wdtAccentTxtColor);
+    font-family: var(--wdtFontTypo_Alt);
+    font-weight: var(--wdtFontWeight_Base);
+    padding-right: 6px;
+}
+
+.wdt-custom-home-6-countdown .wdt-countdown-holder .wdt-counter-wrapper .wdt-counter-inner-wrapper .title {
+    font-size: var(--wdtFontSize_Ext);
+    color: var(--wdtAccentTxtColor);
+    font-family: var(--wdtFontTypo_Base);
+    font-weight: var(--wdtFontWeight_Base);
+}
+
+.wdt-custom-home-6-countdown .wdt-countdown-holder .wdt-counter-wrapper .wdt-counter-inner-wrapper {
+    padding: 0 clamp(0.625rem, 0.1923rem + 1.9231vw, 2.5rem);
+}
+
+.wdt-custom-home-6-countdown .wdt-countdown-holder .wdt-counter-wrapper .wdt-counter-divider {
+    font-size: 0px;
+    position: relative;
+}
+
+.wdt-custom-home-6-countdown .wdt-countdown-holder .wdt-counter-wrapper .wdt-counter-divider:after {
+    content: '';
+    width: 1px;
+    height: 48px;
+    background: var(--wdtAccentTxtColor);
+    right: 0px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* new */
+
+.wdt-simple-countdown.elementor-widget.elementor-widget-wdt-countdown p.wdt-countdown-label {
+    display: none;
+}
+
+.wdt-simple-countdown.elementor-widget.elementor-widget-wdt-countdown .wdt-downcount {
+    border: none;
+}
+
+.wdt-simple-countdown .wdt-countdown-holder .wdt-counter-wrapper .wdt-counter-inner-wrapper {
+    padding: 0 20px;
+}
+
+.wdt-simple-countdown.elementor-widget .wdt-counter-wrapper .wdt-counter-number {
+    font-size: clamp(2.5rem, 2.125rem + 1.875vw, 4.375rem);
+    font-family: var(--wdtFontTypo_Alt);
+    font-weight: var(--wdtFontWeight_Base);
+    line-height: 1;
+}
+
+.wdt-simple-countdown.elementor-widget .wdt-countdown-holder .wdt-counter-wrapper .wdt-counter-inner-wrapper .title {
+    font-size: var(--wdtFontSize_Base);
+    font-weight: var(--wdtFontWeight_Base);
+    font-family: var(--wdtFontTypo_Base);
+    opacity: 0.5;
+}
+
+.wdt-simple-countdown.elementor-widget .wdt-countdown-holder .wdt-counter-wrapper .wdt-counter-divider {
+    line-height: 1;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+
+/* ----Responsive----- */
+@media only screen and (max-width:767px) {
+
+
+    .wdt-countdown-holder .wdt-counter-wrapper .wdt-counter-inner-wrapper {
+        padding: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .wdt-counter-wrapper .wdt-counter-number {
+        font-size: var(--wdtFontSize_H4);
+    }
+
+    .wdt-countdown-holder .wdt-counter-wrapper .wdt-counter-inner-wrapper {
+        padding: 5px;
+    }
+
+    .wdt-countdown-holder .wdt-counter-wrapper .wdt-counter-divider {
+        font-size: var(--wdtFontSize_H4);
+    }
+
+    .wdt-countdown-holder .wdt-counter-wrapper .wdt-counter-inner-wrapper .title {
+        font-size: var(--wdtFontSize_H6);
+    }
+
+    .wdt-simple-countdown.elementor-widget .wdt-counter-wrapper .wdt-counter-number {
+        font-size: clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
+    }
+}

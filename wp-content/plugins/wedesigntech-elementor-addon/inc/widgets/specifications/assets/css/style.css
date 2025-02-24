@@ -1,0 +1,19 @@
+/*==== Specification Common ====*/
+
+.wdt-content-item .wdt-specification-block img { width: 100%; height: 100%; object-fit: cover; object-position: center center; }
+
+/* Specification Title */
+
+.wdt-content-item .wdt-specification-block .wdt-content-title h5 { margin-top: 0; }
+
+/* Specification Items */
+
+.wdt-content-item .wdt-specification-block .wdt-content-detail-group .wdt-content-spec-group > .wdt-content-spec-items { 
+    display: inherit; font-family: var(--wdtFontTypo_Alt); color: var(--wdtHeadAltColor); 
+    font-size: var(--wdtFontSize_H6); font-weight: 500; }
+
+.wdt-content-item .wdt-specification-block .wdt-content-detail-group .wdt-content-spec-group > .wdt-content-spec-items > span { 
+    position: relative; display: inline-flex; align-items: baseline; justify-content: center; }
+.wdt-content-item .wdt-specification-block .wdt-content-detail-group .wdt-content-spec-group > .wdt-content-spec-items > span:before {
+    content: '\f10c'; font-family: "AaKum Icons"; position: relative; display: inline-block; margin-right: 8px; font-size: 0.7rem; 
+    line-height: 1; -webkit-transform: translateY(-30%); transform: translateY(-30%); }

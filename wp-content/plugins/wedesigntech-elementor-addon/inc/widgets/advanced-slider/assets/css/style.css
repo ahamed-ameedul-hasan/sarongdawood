@@ -1,0 +1,25 @@
+/*==== Advanced Slider Common ====*/
+
+.wdt-content-item .wdt-advanced-slider-block img { width: 100%; height: 100%; object-fit: cover; object-position: center center; }
+
+.wdt-content-item .wdt-advanced-slider-block .wdt-content-image-wrapper,
+.wdt-content-item .wdt-advanced-slider-block .wdt-content-detail-group { width: 100%; height: 100%; display: block; }
+
+.wdt-content-item .wdt-advanced-slider-block .wdt-content-image-wrapper .wdt-content-image,
+.wdt-content-item .wdt-advanced-slider-block .wdt-content-image-wrapper .wdt-content-image a { display: block; height: 100%; }
+
+.wdt-content-item .wdt-advanced-slider-block .wdt-content-detail-group .wdt-content-button-group { display: inline; }
+
+
+/* AD Style */
+
+.wdt-specifications-holder .wdt-content-item .wdt-advanced-slider-block .wdt-content-detail-group .wdt-content-button-group {
+    width: auto; margin: 0; }
+.wdt-specifications-holder .wdt-content-item .wdt-advanced-slider-block .wdt-content-detail-group .wdt-content-button-group .wdt-content-button {
+    display: inline-block; margin: 5px; }
+
+.wdt-specifications-holder .wdt-content-item .wdt-advanced-slider-block .wdt-content-detail-group .wdt-content-button-group .wdt-content-button + .wdt-content-button > a {
+    background-color: var(--wdtPrimaryColor); color: var(--wdtAccentTxtColor); }
+    
+.wdt-specifications-holder .wdt-content-item .wdt-advanced-slider-block .wdt-content-detail-group .wdt-content-button-group .wdt-content-button + .wdt-content-button > a:hover {
+    background-color: var(--wdtTertiaryColor); color: var(--wdtPrimaryColor); }

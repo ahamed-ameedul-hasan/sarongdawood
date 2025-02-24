@@ -1,0 +1,114 @@
+.razzi-product-brands {
+    .rz-swiper-button {
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        background-color: #fff;
+        font-size: 20px;
+        opacity: 1;
+    }
+}
+
+.razzi-product-brands__box {
+    margin: -15px;
+}
+
+.razzi-product-brands__item {
+    padding: 15px;
+}
+
+.razzi-product-brands__item-inner {
+    background-color: var( --rz-background-color-light );
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    padding: 46px 35px 33px 35px;
+}
+
+.razzi-product-brands__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .brand-header--count {
+        font-size: 14px;
+        color: var( --rz-text-color-gray );
+    }
+}
+
+.razzi-product-brands__name {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+
+    .razzi-svg-icon {
+        font-size: 13px;
+        margin-left: 10px;
+    }
+}
+
+.razzi-product-brands__product-list {
+    margin-top: 40px;
+    position: relative;
+}
+
+.razzi-product-brands__product-wrapper {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+    .product-item {
+        text-align: center;
+        .product-inner {
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            border-radius: 8px;
+        }
+    }
+
+    .product-item__price {
+        font-weight: 500;
+        color: var( --rz-color-dark );
+        padding: 10px;
+
+        ins {
+            background-color: transparent;
+        }
+
+        del {
+            color: var( --rz-text-color-gray );
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    @for $i from 1 through 5 {
+        .elementor-widget-razzi-product-brands.columns-#{$i} {
+            .razzi-product-brands__item {
+                width: calc( ( 100% / #{$i} ) );
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    @for $i from 1 through 5 {
+        .elementor-widget-razzi-product-brands.columns--tablet#{$i} {
+            .razzi-product-brands__item {
+                width: calc( ( 100% / #{$i} ) );
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    @for $i from 1 through 5 {
+        .elementor-widget-razzi-product-brands.columns--mobile#{$i} {
+            .razzi-product-brands__item {
+                width: calc( ( 100% / #{$i} ) );
+            }
+        }
+    }
+}

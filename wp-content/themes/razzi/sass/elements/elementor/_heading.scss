@@ -1,0 +1,75 @@
+.razzi-heading-title {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+
+    small {
+        font-size: 13px;
+        display: block;
+        color: #A0A0A0;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+}
+
+.razzi-heading-title {
+    --rz-stroke-color:#1F1F1F00;
+    --rz-stroke-width: 0px;
+
+    text-shadow: calc(var(--rz-stroke-width) * 1) calc(var(--rz-stroke-width) * 0) 0
+        var(--rz-stroke-color),
+    calc(var(--rz-stroke-width) * 0.9239) calc(var(--rz-stroke-width) * 0.3827) 0
+        var(--rz-stroke-color),
+    calc(var(--rz-stroke-width) * 0.7071) calc(var(--rz-stroke-width) * 0.7071) 0
+        var(--rz-stroke-color),
+    calc(var(--rz-stroke-width) * 0.3827) calc(var(--rz-stroke-width) * 0.9239) 0
+        var(--rz-stroke-color),
+    calc(var(--rz-stroke-width) * 0) calc(var(--rz-stroke-width) * 1) 0
+        var(--rz-stroke-color),
+    calc(var(--rz-stroke-width) * -0.3827) calc(var(--rz-stroke-width) * 0.9239) 0
+        var(--rz-stroke-color),
+    calc(var(--rz-stroke-width) * -0.7071) calc(var(--rz-stroke-width) * 0.7071) 0
+        var(--rz-stroke-color),
+    calc(var(--rz-stroke-width) * -0.9239) calc(var(--rz-stroke-width) * 0.3827) 0
+        var(--rz-stroke-color),
+    calc(var(--rz-stroke-width) * -1) calc(var(--rz-stroke-width) * 0) 0
+        var(--rz-stroke-color),
+    calc(var(--rz-stroke-width) * -0.9239) calc(var(--rz-stroke-width) * -0.3827) 0
+        var(--rz-stroke-color),
+    calc(var(--rz-stroke-width) * -0.7071) calc(var(--rz-stroke-width) * -0.7071) 0
+        var(--rz-stroke-color),
+    calc(var(--rz-stroke-width) * -0.3827) calc(var(--rz-stroke-width) * -0.9239) 0
+        var(--rz-stroke-color),
+    calc(var(--rz-stroke-width) * 0) calc(var(--rz-stroke-width) * -1) 0
+        var(--rz-stroke-color),
+    calc(var(--rz-stroke-width) * 0.3827) calc(var(--rz-stroke-width) * -0.9239) 0
+        var(--rz-stroke-color),
+    calc(var(--rz-stroke-width) * 0.7071) calc(var(--rz-stroke-width) * -0.7071) 0
+        var(--rz-stroke-color),
+    calc(var(--rz-stroke-width) * 0.9239) calc(var(--rz-stroke-width) * -0.3827) 0
+        var(--rz-stroke-color);
+}
+
+h2.razzi-heading-title {
+    font-size: 36px;
+}
+
+.razzi-scrolling-yes {
+    display: flex;
+    overflow: hidden;
+
+    .razzi-heading-title {
+        float: left;
+        animation: sliding var(--rz-animation-duration) linear infinite;
+        padding-right: 100px;
+
+        text-transform: uppercase;
+        white-space: nowrap;
+        --rz-animation-duration: 60s;
+    }
+}
+
+@keyframes sliding {
+    0%{ transform: translateX(0); }
+    100%{ transform: translateX(-100%); }
+}

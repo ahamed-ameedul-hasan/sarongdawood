@@ -1,0 +1,38 @@
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+@import "menus";
+@import "menu-socials";
+@import "mega-menu";
+@import "breadcrumb";
+@import "nav-ajax";
+
+.navigation.pagination {
+	.nav-links {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+
+		.page-numbers {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-width: 44px;
+			min-height: 44px;
+			padding: 8px 10px;
+			border: 1px solid var(--rz-border-color-light);
+
+			&.current,
+			&:hover {
+				background-color: #1F1F1F;
+				color: #fff;
+				border-color: #1F1F1F;
+			}
+		}
+
+		.razzi-svg-icon {
+			font-size: 20px;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+.header-custom-text {
+	color: var(--rz-header-color-dark);
+
+	a {
+		color: inherit;
+	}
+
+	.razzi-button {
+		font-size: 14px;
+		line-height: 30px;
+		padding: 0 13px;
+		border-radius: 3px;
+	}
+}

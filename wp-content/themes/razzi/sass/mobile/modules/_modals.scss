@@ -1,0 +1,10 @@
+@import "modules/modals";
+
+.rz-modal {
+	--rz-modal-spacing: 20px;
+	z-index: 2000;
+}
+
+.rz-modal .panel-content {
+	width: 90%;
+}
